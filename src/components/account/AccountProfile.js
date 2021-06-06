@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import moment from 'moment';
 import {
   Avatar,

@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import { useRoutes } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/core';

@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 import moment from 'moment';
 import { v4 as uuid } from 'uuid';
 import PerfectScrollbar from 'react-perfect-scrollbar';

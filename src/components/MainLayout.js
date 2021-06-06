@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 import { Outlet } from 'react-router-dom';
 import { experimentalStyled } from '@material-ui/core';
 import MainNavbar from './MainNavbar';

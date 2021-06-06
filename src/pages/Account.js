@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 import { Helmet } from 'react-helmet';
 import {
   Box,

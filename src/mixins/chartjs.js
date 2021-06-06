@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 /* eslint-disable no-underscore-dangle */
 import { Chart } from 'react-chartjs-2';
 

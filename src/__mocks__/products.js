@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import { v4 as uuid } from 'uuid';
 
 export default [

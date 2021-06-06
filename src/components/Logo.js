@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 const Logo = (props) => (
   <img
     alt="Logo"

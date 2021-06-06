@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 import { SvgIcon } from '@material-ui/core';
 
 const Google = (props) => (

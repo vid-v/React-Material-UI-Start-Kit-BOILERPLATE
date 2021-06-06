@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 export default {
   h1: {
     fontWeight: 500,

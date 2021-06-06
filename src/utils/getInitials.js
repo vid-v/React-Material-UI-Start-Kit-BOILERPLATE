@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 export default (name = '') => name
   .replace(/\s+/, ' ')
   .split(' ')

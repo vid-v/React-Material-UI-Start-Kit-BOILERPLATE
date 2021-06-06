@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 import { createStyles, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(() => createStyles({

@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 import { Helmet } from 'react-helmet';
 import { Box, Container } from '@material-ui/core';
 import SettingsNotifications from 'src/components/settings/SettingsNotifications';

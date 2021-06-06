@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"] */
+
 import { Navigate } from 'react-router-dom';
 import DashboardLayout from 'src/components/DashboardLayout';
 import MainLayout from 'src/components/MainLayout';
