@@ -1,17 +1,20 @@
 /* eslint linebreak-style: ["error", "windows"] */
 
 import { useEffect } from 'react';
-import { Link as RouterLink, useLocation } from 'react-router-dom';
+import {
+  // Link as RouterLink,
+  useLocation
+} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
-  Avatar,
+  // Avatar,
   Box,
-  Button,
-  Divider,
+  // Button,
+  // Divider,
   Drawer,
   Hidden,
   List,
-  Typography
+  // Typography
 } from '@material-ui/core';
 import {
   AlertCircle as AlertCircleIcon,
@@ -25,50 +28,50 @@ import {
 } from 'react-feather';
 import NavItem from './NavItem';
 
-const user = {
-  avatar: '/static/images/avatars/avatar_6.png',
-  jobTitle: 'Senior Developer',
-  name: 'Katarina Smith'
-};
+// const user = {
+//   avatar: '/static/images/avatars/avatar_6.png',
+//   jobTitle: 'Senior Developer',
+//   name: 'Katarina Smith'
+// };
 
 const items = [
   {
-    href: '/app/dashboard',
+    href: '/#', // '/app/dashboard'
     icon: BarChartIcon,
     title: 'Dashboard'
   },
   {
-    href: '/app/customers',
+    href: '/#', // '/app/customers'
     icon: UsersIcon,
     title: 'Customers'
   },
   {
-    href: '/app/products',
+    href: '/#', // '/app/products'
     icon: ShoppingBagIcon,
     title: 'Products'
   },
   {
-    href: '/app/account',
+    href: '/#', // '/app/account'
     icon: UserIcon,
     title: 'Account'
   },
   {
-    href: '/app/settings',
+    href: '/#', // '/app/settings'
     icon: SettingsIcon,
     title: 'Settings'
   },
   {
-    href: '/login',
+    href: '/#', // '/login'
     icon: LockIcon,
     title: 'Login'
   },
   {
-    href: '/register',
+    href: '/#', // '/register'
     icon: UserPlusIcon,
     title: 'Register'
   },
   {
-    href: '/404',
+    href: '/#', // '/404'
     icon: AlertCircleIcon,
     title: 'Error'
   }
@@ -91,7 +94,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
         height: '100%'
       }}
     >
-      <Box
+      {/* <Box
         sx={{
           alignItems: 'center',
           display: 'flex',
@@ -121,8 +124,8 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
         >
           {user.jobTitle}
         </Typography>
-      </Box>
-      <Divider />
+      </Box> */}
+      {/* <Divider /> */}
       <Box sx={{ p: 2 }}>
         <List>
           {items.map((item) => (
@@ -135,7 +138,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
           ))}
         </List>
       </Box>
-      <Box sx={{ flexGrow: 1 }} />
+      {/* <Box sx={{ flexGrow: 1 }} />
       <Box
         sx={{
           backgroundColor: 'background.default',
@@ -172,7 +175,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
             See PRO version
           </Button>
         </Box>
-      </Box>
+      </Box> */}
     </Box>
   );
 
@@ -193,7 +196,8 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
           {content}
         </Drawer>
       </Hidden>
-      <Hidden lgDown>
+
+      {/* <Hidden lgDown>
         <Drawer
           anchor="left"
           open
@@ -208,7 +212,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
         >
           {content}
         </Drawer>
-      </Hidden>
+      </Hidden> */}
     </>
   );
 };

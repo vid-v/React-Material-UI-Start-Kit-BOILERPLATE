@@ -23,41 +23,47 @@ const DashboardLayoutWrapper = experimentalStyled('div')(
     overflow: 'hidden',
     paddingTop: 64,
     [theme.breakpoints.up('lg')]: {
-      paddingLeft: 256
+      // paddingLeft: 256
     }
   })
 );
 
-const DashboardLayoutContainer = experimentalStyled('div')({
-  display: 'flex',
-  flex: '1 1 auto',
-  overflow: 'hidden'
-});
+// const DashboardLayoutContainer = experimentalStyled('div')({
+//   display: 'flex',
+//   flex: '1 1 auto',
+//   overflow: 'hidden'
+// });
 
-const DashboardLayoutContent = experimentalStyled('div')({
-  flex: '1 1 auto',
-  height: '100%',
-  overflow: 'auto'
-});
+// const DashboardLayoutContent = experimentalStyled('div')({
+//   flex: '1 1 auto',
+//   height: '100%',
+//   overflow: 'auto'
+// });
 
 const DashboardLayout = () => {
-  const [isMobileNavOpen, setMobileNavOpen] = useState(false);
+  const [
+    isMobileNavOpen,
+    setMobileNavOpen
+  ] = useState(false);
 
   return (
-    <DashboardLayoutRoot>
-      <DashboardNavbar onMobileNavOpen={() => setMobileNavOpen(true)} />
-      <DashboardSidebar
-        onMobileClose={() => setMobileNavOpen(false)}
-        openMobile={isMobileNavOpen}
-      />
-      <DashboardLayoutWrapper>
-        <DashboardLayoutContainer>
+    <>
+      <DashboardLayoutRoot>
+        <DashboardNavbar onMobileNavOpen={() => setMobileNavOpen(true)} />
+        <DashboardSidebar
+          onMobileClose={() => setMobileNavOpen(false)}
+          openMobile={isMobileNavOpen}
+        />
+        <DashboardLayoutWrapper>
+          <Outlet />
+          {/* <DashboardLayoutContainer>
           <DashboardLayoutContent>
-            <Outlet />
           </DashboardLayoutContent>
         </DashboardLayoutContainer>
-      </DashboardLayoutWrapper>
-    </DashboardLayoutRoot>
+      */}
+        </DashboardLayoutWrapper>
+      </DashboardLayoutRoot>
+    </>
   );
 };
 
